@@ -1,0 +1,15 @@
+kturtle-script-v1.0
+@(clear)
+@(reset)
+@(learn) golden $step@(,) $turn@(,) $inc {
+@(clear)
+@(reset)
+@(penup)
+@(turnleft) 180
+@(forward) 100
+@(turnleft) 180
+@(pendown)
+@(repeat) 700 {@(forward) $step @(turnright) $turn $turn = $turn - $inc 
+$step = $step + $inc *4}
+}
+golden 3@(,) 90@(,) 0.1

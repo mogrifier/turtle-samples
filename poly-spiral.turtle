@@ -1,0 +1,33 @@
+kturtle-script-v1.0
+@(learn) xagon $sides@(,) $length {
+@(repeat) $sides {@(forward) $length @(turnright) 360/$sides}}
+xagon 4@(,) 2
+
+@(learn) translate $dir@(,) $len
+{
+@(penup)
+ @(turnright) $dir
+@(forward) $len 
+@(pendown)
+}
+
+
+@(learn) polyspiral $sides@(,) $size@(,) $turn@(,) $distance
+{
+@(repeat) 50
+{
+xagon $sides@(,) $size
+
+$size = $size + 1
+
+translate $turn@(,) $distance
+
+$turn = $turn + 2
+$distance = $distance + 3
+
+}
+}
+
+@(clear) @(reset)
+
+polyspiral 5@(,) 15@(,) 41@(,) 10

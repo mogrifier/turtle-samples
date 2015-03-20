@@ -1,0 +1,4 @@
+kturtle-script-v1.0
+@(clear)
+@(learn) spiral $move@(,) $turn@(,) $inc { @(repeat) 200 {@(forward) $move @(turnleft) $turn    $turn = $turn - $inc}}
+spiral 8@(,) 20@(,) 14

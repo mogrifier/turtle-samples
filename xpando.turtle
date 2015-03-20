@@ -1,0 +1,13 @@
+kturtle-script-v1.0
+@(learn) square $length {@(repeat) 4 {@(forward) $length @(turnright) 90}}
+square 40
+@(turnright) 180
+@(forward) 200
+square 50
+
+
+@(learn) expando $x@(,) $inc {@(repeat) 500 { square $x $x = $x + $inc @(turnright) 1}}
+
+@(clear) 
+@(reset)
+expando 40@(,) .2

@@ -1,0 +1,6 @@
+kturtle-script-v1.0
+@(clear)
+@(reset)
+@(learn) star $length
+{@(repeat) 5 {@(forward) $length @(turnright) 144} }
+star 100

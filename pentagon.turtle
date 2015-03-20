@@ -1,0 +1,4 @@
+kturtle-script-v1.0
+@(learn) pentagon $size {
+@(repeat) 5 {@(forward) $size @(turnleft) 72}}
+pentagon 120

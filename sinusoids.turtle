@@ -1,0 +1,14 @@
+kturtle-script-v1.0
+@(clear)
+@(reset)
+@(learn) sinusoid $inc {
+@(clear) @(reset) $y = 0
+
+@(repeat) 10
+{
+@(turnright) 30
+ @(repeat) 180
+{ $y = $y + $inc
+$x = @(sin)($y) @(turnright) 1 @(forward) $x * 2.8}}
+}
+sinusoid 2

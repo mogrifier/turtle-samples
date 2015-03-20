@@ -1,0 +1,6 @@
+kturtle-script-v1.0
+@(clear)
+@(reset)
+@(learn) xagon $sides@(,) $length {@(clear) @(reset)
+@(repeat) $sides {@(forward) $length @(turnright) 360/$sides}}
+xagon 7@(,) 40

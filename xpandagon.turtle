@@ -1,0 +1,10 @@
+kturtle-script-v1.0
+@(learn) xagon $sides@(,) $length {
+@(repeat) $sides {@(forward) $length @(turnright) 360/$sides}}
+
+
+@(learn) expandogon $sides@(,) $x@(,) $inc {@(repeat) 500 { xagon $sides@(,) $x $x = $x + $inc @(turnright) 1}}
+
+@(clear) 
+@(reset)
+expandogon 11@(,) 30@(,) .9
